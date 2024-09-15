@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import Alert from "./components/Alert";
 import About from "./components/About";
+/* import { motion } from "framer-motion"; */
 
 /* IMPORTING FOR REACT ROUTER (V6) */
 import React from "react";
@@ -55,7 +56,7 @@ function App() {
               element={
                 <TextForm
                   showAlert={showAlert}
-                  heading="Try Text Operations :"
+                  /* heading="Try Text Operations :" */
                   mode={mode}
                 />
               }
