@@ -48,13 +48,13 @@ export default function TextForm(props) {
         Try Text Operations:
       </motion.h2>
       <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{
-        duration: 0.8,
-        delay: 0.5,
-        ease: [0, 0.71, 0.2, 1.01]
-      }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
         className="mb-3"
         style={{ color: props.mode === "dark" ? "white" : "#042743" }}
       >
@@ -74,41 +74,51 @@ export default function TextForm(props) {
       </motion.div>
 
       {/* BUTTONS */}
-      <button
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         disabled={text.length === 0}
-        className="btn btn-primary mx-1 my-1"
+        className="btn btn-primary mx-2 my-1"
         onClick={upperclick}
       >
         Convert to UpperCase
-      </button>
-      <button
+      </motion.button>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         disabled={text.length === 0}
-        className="btn btn-primary mx-1 my-1"
+        className="btn btn-primary mx-2 my-1"
         onClick={lowerclick}
       >
         Convert to lowerCase
-      </button>
-      <button
+      </motion.button>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         disabled={text.length === 0}
-        className="btn btn-primary mx-1 my-1"
+        className="btn btn-primary mx-2 my-1"
         onClick={copytext}
       >
         Copy text
-      </button>
-      <button
+      </motion.button>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         disabled={text.length === 0}
-        className="btn btn-primary mx-1 my-1"
+        className="btn btn-primary mx-2 my-1"
         onClick={extraspace}
       >
         Remove Extra Spaces
-      </button>
-      <button
+      </motion.button>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
         disabled={text.length === 0}
-        className="btn btn-danger mx-1 my-1"
+        className="btn btn-danger mx-2 my-1"
         onClick={clearclick}
       >
         Clear Text
-      </button>
+      </motion.button>
 
       <div
         className="container my-3"
